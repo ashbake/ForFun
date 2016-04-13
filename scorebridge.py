@@ -16,9 +16,9 @@ class RubberBridgeScore():
     def info(self):
         print 'Input bid, declarer, and tricks won: game.round(bid,declarer,tricks)'
         print ' bid: e.g. "3NT", "2S*", "4C**" '
-        print ' declarer: person who won bid either "N" "S" "E" or "W" '
-        print ' tricks: number of tricks won out of 13 '
-        print ' print game.score() to see table tab = game.start() then do game.round(bid,declarer,tricks,tab)????'
+        print ' declarer: person who won bid either "N" "S" "E" or "W" except need to fix this so when north is vulnerable, so is south e.g.'
+        print ' tricks: number of total tricks won out of 13 '
+        print ' print game.score to see the score and game.bonus to see the bonus score. eventually will just immediately print a sweet table'
 
     def round(self, bid, declarer, tricks):
         bidsplit = bid.split("*")
